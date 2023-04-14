@@ -6,16 +6,16 @@ A funny .pcap of a 802.11 CTS Control Frame I made with 30000 (max duration) to 
 
 ### Instrucciones
 
-Existen 2 files:
+Existen 2 files listos para la diversión:
 
-1. Fz3r0_CTS_808.pcap - Este es un CTS raw capturado, sin modificar ni nada (excelente para hacer tampering de 0)
-2. Fz3r0_CTS_808_30000duration_attack.pcap - Este esn un CTS ya modificado con el Duration en 30000 (máximo válido para un CTS)
+1. [Fz3r0_CTS_808.pcap](https://github.com/Fz3r0/WiFi-CTS-Frame-Attack-802.11-Frame/blob/main/CTS-PCAPS/Fz3r0_CTS_808.pcap) - Este es un CTS raw capturado, sin modificar ni nada (excelente para hacer tampering de 0)
+2. [Fz3r0_CTS_808_30000duration_attack.pcap](https://github.com/Fz3r0/WiFi-CTS-Frame-Attack-802.11-Frame/blob/main/CTS-PCAPS/Fz3r0_CTS_808_30000duration_attack.pcap) - Este esn un CTS ya modificado con el Duration en 30000 (máximo válido para un CTS)
 
 Solo es necesario inyectarlo a la red en forma de flood al BSS que quieras atacar, por ejemplo:
 
-````sh
+```sh
 tcpreplay --intf1=wlan0mon --topspeed --loop=2000 Fz3r0_CTS_808_30000duration_attack.pcap 2>/dev/null
-````
+```
 
 - OJO!!! Hay que hacer modificación HEX para agregar la MAC/BSS de la WLAN a atacar
 
@@ -23,7 +23,7 @@ tcpreplay --intf1=wlan0mon --topspeed --loop=2000 Fz3r0_CTS_808_30000duration_at
 
 ### Ataque completo: 
 
-````sh
+```sh
 
 ## CTS = Clear To Send (Control Frames) Attack
 
