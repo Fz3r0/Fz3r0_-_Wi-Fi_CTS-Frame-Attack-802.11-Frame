@@ -1,6 +1,19 @@
 # WiFi-CTS-Frame-Attack-802.11-Frame
 
 A funny .pcap of a 802.11 CTS Control Frame I made with 30000 (max duration) to perform WiFi CTS Attacks
+---
+
+### Introducción
+
+- Este ataque se basa en el secuestro de Bandwith (DataRate & Throughput) de la WLAN creando contención via Flooding de `CTS Frames` con su máximo `Duration`, esto genera un tipo de `DoS` en el WiFi. Esto puede generar comportamientos irregulares en la red, como deautenticar clientes. 
+
+- El propósito es deautenticar clientes para al final capturar un 4-way-handshake (similar a un deauth attack) y así poder crackear el password e ingresar a la red, a partir de ahí se crea el foothold para post-exploit de red. 
+
+Un ataque CTS frame es un tipo de ataque de red inalámbrica que busca explotar una vulnerabilidad en el protocolo de control `control frame 802.11 CTS (Clear to Send)` utilizado por el estándar de comunicación inalámbrica IEEE 802.11.
+
+En este tipo de ataque, un atacante envía una gran cantidad de paquetes falsificados al dispositivo objetivo, cada uno de los cuales solicita una respuesta de tipo CTS. Al inundar al dispositivo objetivo con tantas solicitudes, el atacante puede abrumar su capacidad de respuesta, lo que puede provocar una caída en la conexión o retrasos en la comunicación.
+
+El ataque CTS frame es una técnica de ataque de denegación de servicio (DoS) que tiene como objetivo interrumpir o interferir con la conexión inalámbrica de un dispositivo objetivo mediante la saturación de solicitudes falsificadas de tipo CTS.
 
 ---
 
