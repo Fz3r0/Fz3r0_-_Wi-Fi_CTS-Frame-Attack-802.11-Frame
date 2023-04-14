@@ -37,7 +37,7 @@ tcpreplay --intf1=wlan0mon --topspeed --loop=2000 Fz3r0_CTS_808_30000duration_at
 
 ### PoC 
 
-- Prove of Concept de ataque capturado en `pcapng`
+- Proof of Concept de ataque capturado en `pcapng`
 
 [Ataqu-CTS-full-capturado-2devices.zip](https://github.com/Fz3r0/WiFi-CTS-Frame-Attack-802.11-Frame/files/11228557/Ataqu-CTS-full-capturado-2devices.zip)
 
