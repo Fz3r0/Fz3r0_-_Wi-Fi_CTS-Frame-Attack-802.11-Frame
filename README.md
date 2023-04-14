@@ -1,6 +1,7 @@
-# WiFi-CTS-Frame-Attack-802.11-Frame
+# WiFi 802.11: CTS Frame Attack
 
-A funny .pcap of a 802.11 CTS Control Frame I made with 30000 (max duration) to perform WiFi CTS Attacks
+_Proof of Concept (PoC) que hice del proceso completo de un CTS Frame Attack con instrucciones paso a paso_
+
 ---
 
 ### Introducción
