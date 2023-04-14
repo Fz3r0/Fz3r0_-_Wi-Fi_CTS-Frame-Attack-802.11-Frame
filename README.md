@@ -16,6 +16,11 @@ En este tipo de ataque, un atacante envía una gran cantidad de paquetes falsifi
 
 El ataque CTS frame es una técnica de ataque de denegación de servicio (DoS) que tiene como objetivo interrumpir o interferir con la conexión inalámbrica de un dispositivo objetivo mediante la saturación de solicitudes falsificadas de tipo CTS.
 
+- Diagrama de transmisión 802.11
+
+![image](https://user-images.githubusercontent.com/94720207/231958899-e9e86492-a1af-4539-889f-b3b598db9d88.png)
+
+
 ---
 
 ### Instrucciones
