@@ -57,16 +57,16 @@ Nota: Utilicé mis filtros creados para `BlackShark`:
 wlan.duration == 30000 && wlan.fc.type_subtype == 0x001c
 ````
 
-![image](https://user-images.githubusercontent.com/94720207/232181063-eb49e003-04cb-4a75-b04e-4b2c743c230f.png)
+![image](https://user-images.githubusercontent.com/94720207/232187082-f7ee2924-019b-49be-9f67-c6c22d14638c.png)
 
-- Master Fz3r0 Filter - 4-way-handshake Process + Action
+- Master Fz3r0 Filter - 4-way-handshake Process
 
 ````py
-# 4-way-handshake Process + Action
-!wlan.fc.retry == 1 && (wlan.fc.type_subtype == 0 || wlan.fc.type_subtype == 1 || wlan.fc.type_subtype == 11 || wlan.fc.type_subtype == 12 || wlan.fc.type_subtype == 10 || eapol || wlan.fc.type_subtype == 13)
+!wlan.fc.retry == 1 && (wlan.fc.type_subtype == 0 || wlan.fc.type_subtype == 1 || wlan.fc.type_subtype == 11 || wlan.fc.type_subtype == 12 || wlan.fc.type_subtype == 10 || eapol)
 ````
 
-![image](https://user-images.githubusercontent.com/94720207/232180025-4302ca85-c9cc-47c0-a55e-cb2e5e3d491b.png)
+![image](https://user-images.githubusercontent.com/94720207/232185510-553656a2-a304-4edb-9dbc-cff2501dd3eb.png)
+
 
 ## Ataque completo
 
