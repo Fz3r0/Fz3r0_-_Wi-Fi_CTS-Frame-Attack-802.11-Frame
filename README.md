@@ -54,6 +54,15 @@ Evidencias:
 wlan.addr == 30:45:96:d7:f2:3e
 ````
 
+- Master Fz3r0 Filter - CTS Attack DoS Evidencia:
+
+![image](https://user-images.githubusercontent.com/94720207/232181063-eb49e003-04cb-4a75-b04e-4b2c743c230f.png)
+
+- Master Fz3r0 Filter - 2 Devices Handshake
+
+![image](https://user-images.githubusercontent.com/94720207/232180025-4302ca85-c9cc-47c0-a55e-cb2e5e3d491b.png)
+
+
 1. PC-1 - Handshake Capture
 
 ![image](https://user-images.githubusercontent.com/94720207/231935562-00b0eedc-1f31-463e-bd73-82cf725eab7e.png)
@@ -227,4 +236,7 @@ sendp(pkt, iface="wlan0mon", count=1)
 ### Ejemplo de ghex como quedaría el tamper al final: 
 
 ![image](https://user-images.githubusercontent.com/94720207/231923676-45c90520-c7fe-41e2-928e-d164a2bd3afc.png)
+
+![image](https://user-images.githubusercontent.com/94720207/232181113-3d686a20-4535-4d43-9271-646128b89047.png)
+
 
