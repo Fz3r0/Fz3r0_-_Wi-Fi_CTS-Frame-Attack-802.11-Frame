@@ -48,28 +48,25 @@ tcpreplay --intf1=wlan0mon --topspeed --loop=2000 Fz3r0_CTS_808_30000duration_at
 
 Evidencias: 
 
-- Nota: La manera más fácil de filtrarlos es buscando el BSS tanto en source y destination e identifical los EAPOL por el código de colores de `BlackShark`:
-
-````java
-wlan.addr == 30:45:96:d7:f2:3e
-````
+Nota: Utilicé mis filtros creados para `BlackShark`:
 
 - Master Fz3r0 Filter - CTS Attack DoS Evidencia:
 
+````py
+# CTS Frames & Duration = 30000
+wlan.duration == 30000 && wlan.fc.type_subtype == 0x001c
+````
+
 ![image](https://user-images.githubusercontent.com/94720207/232181063-eb49e003-04cb-4a75-b04e-4b2c743c230f.png)
 
-- Master Fz3r0 Filter - 2 Devices Handshake
+- Master Fz3r0 Filter - 4-way-handshake Process + Action
+
+````py
+# 4-way-handshake Process + Action
+!wlan.fc.retry == 1 && (wlan.fc.type_subtype == 0 || wlan.fc.type_subtype == 1 || wlan.fc.type_subtype == 11 || wlan.fc.type_subtype == 12 || wlan.fc.type_subtype == 10 || eapol || wlan.fc.type_subtype == 13)
+````
 
 ![image](https://user-images.githubusercontent.com/94720207/232180025-4302ca85-c9cc-47c0-a55e-cb2e5e3d491b.png)
-
-
-1. PC-1 - Handshake Capture
-
-![image](https://user-images.githubusercontent.com/94720207/231935562-00b0eedc-1f31-463e-bd73-82cf725eab7e.png)
-
-2. PC-2 - Handshake Capture
-
-![image](https://user-images.githubusercontent.com/94720207/231935681-b6951a34-0aa4-43be-9831-feda10eac9fe.png)
 
 ## Ataque completo
 
