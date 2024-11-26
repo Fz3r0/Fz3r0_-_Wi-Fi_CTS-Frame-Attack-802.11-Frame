@@ -32,6 +32,8 @@ Existen 2 files listos para la diversión:
 
 Solo es necesario inyectarlo a la red en forma de flood al BSS que quieras atacar, por ejemplo:
 
+- **The maximum amount of microseconds that can be set on the NAV timers of listening stations that hear the transmission of another 802.11 station is = `32,767 μs`**
+
 ```sh
 tcpreplay --intf1=wlan0mon --topspeed --loop=2000 Fz3r0_CTS_808_30000duration_attack.pcap 2>/dev/null
 ```
